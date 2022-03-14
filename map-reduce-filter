@@ -1,0 +1,29 @@
+// Filter the user name from given object array whose age is below 30 
+let userList = [{
+		"name": "john",
+		"age": 20
+	},
+	{
+		"name": "andrew",
+		"age": 25
+	},
+	{
+		"name": "angela",
+		"age": 30
+	},
+	{
+		"name": "erin",
+		"age": 20
+	},
+];
+
+let filteredUser = userList.reduce(function (acc, curr) {
+	if (curr.age < 30) {
+		acc.push(curr.name);
+	}
+	return acc;
+}, [])
+
+console.log(filteredUser);
+
+https://www.jsv9000.app/?code=Ly8gRmlsdGVyIHRoZSB1c2VyIG5hbWUgZnJvbSBnaXZlbiBvYmplY3QgYXJyYXkgd2hvc2UgYWdlIGlzIGJlbG93IDMwIA0KbGV0IHVzZXJMaXN0ID0gW3sNCgkJIm5hbWUiOiAiam9obiIsDQoJCSJhZ2UiOiAyMA0KCX0sDQoJew0KCQkibmFtZSI6ICJhbmRyZXciLA0KCQkiYWdlIjogMjUNCgl9LA0KCXsNCgkJIm5hbWUiOiAiYW5nZWxhIiwNCgkJImFnZSI6IDMwDQoJfSwNCgl7DQoJCSJuYW1lIjogImVyaW4iLA0KCQkiYWdlIjogMjANCgl9LA0KXTsNCg0KbGV0IGZpbHRlcmVkVXNlciA9IHVzZXJMaXN0LnJlZHVjZShmdW5jdGlvbiAoYWNjLCBjdXJyKSB7DQoJaWYgKGN1cnIuYWdlIDwgMzApIHsNCgkJYWNjLnB1c2goY3Vyci5uYW1lKTsNCgl9DQoJcmV0dXJuIGFjYzsNCn0sIFtdKQ0KDQpjb25zb2xlLmxvZyhmaWx0ZXJlZFVzZXIpOw%3D%3D
